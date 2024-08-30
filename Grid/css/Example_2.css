@@ -1,0 +1,86 @@
+.grid {
+    border: 2px blue solid;
+    width: 100%;
+    height: 98vh;
+    grid-template-columns: 10% 25% 20% 25% 20%;
+    grid-template-rows: 10% 25% 60%;
+    display: grid;
+}
+  
+.box {
+    color: black;
+    border-radius: 5px;
+    border: 2px green solid;
+}
+
+.a {
+    grid-column-start: 1;
+    grid-column-end:  5;
+    grid-row-start: 1;
+    height: 100%;
+    width: 125%;
+}
+
+.b {
+    grid-column-start: 1;
+    grid-column-end:  2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 350%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.c {
+    grid-column-start: 2;
+    grid-column-end:  2;
+    grid-row-start: 2;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+}
+
+.d {
+    grid-column-start: 3;
+    grid-column-end:  3;
+    grid-row-start: 2;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+}
+
+.e {
+    grid-column-start: 2;
+    grid-column-end:  3;
+    grid-row-start: 3;
+    height: 100%;
+    width: 170%;
+    margin: 5%;
+}
+
+.f {
+    grid-column-start: 4;
+    grid-column-end:  5;
+    grid-row-start: 2;
+    height: 90%;
+    width: 170%;
+    margin: 5%;
+}
+
+.g {
+    grid-column-start: 4;
+    grid-column-end:  4;
+    grid-row-start: 3;
+    height: 100%;
+    width: 90%;
+    margin: 5%;
+}
+
+.h {
+    grid-column-start: 5;
+    grid-column-end:  5;
+    grid-row-start: 3;
+    height: 100%;
+    width: 90%;
+    margin: 5%;
+}
