@@ -1,0 +1,113 @@
+@import "../helpers/placeholders";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.hot_section {
+  .carousel_container {
+    border: 1px solid #c2c2c2;
+    padding: 45px 0 10px 0;
+    margin-top: 25px;
+    border-left: none;
+    border-right: none;
+  }
+
+  .heading_container h2 {
+    margin-bottom: 0;
+  }
+
+  .box {
+    text-align: center;
+
+    .img-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 135px;
+
+      img {
+        width: 75%;
+      }
+    }
+
+    .detail-box {
+      margin-top: 35px;
+
+      p {
+        margin-top: 10px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 10px 0;
+        background-color: #262626;
+        color: #ffffff;
+        border: 1px solid #262626;
+        text-transform: uppercase;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+          background-color: transparent;
+          color: #262626;
+        }
+      }
+    }
+  }
+
+  .carousel-wrap {
+    margin: 0 auto;
+    padding: 0 5%;
+    position: relative;
+  }
+
+  .owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #959494;
+  }
+
+  .owl-carousel {
+    .owl-nav {
+      .owl-prev {
+        width: 40px;
+        height: 40px;
+        background-color: #fd7e14;
+        background-size: 9px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../images/left-angle.png);
+
+        &:hover {
+          background-color: #e83e8c;
+        }
+
+      }
+
+      .owl-next {
+        width: 40px;
+        height: 40px;
+        background-color: #fd7e14;
+        background-size: 9px;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../images/right-angle.png);
+
+        &:hover {
+          background-color: #e83e8c;
+        }
+
+      }
+    }
+
+    .owl-dots.disabled,
+    .owl-nav.disabled {
+      display: block;
+    }
+  }
+}

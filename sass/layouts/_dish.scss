@@ -1,0 +1,55 @@
+@import "../helpers/placeholders";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.dish {
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .box {
+      flex-basis: calc(50% - 20px);
+      margin: 10px;
+      border: 10px solid #6c757d;
+      background-color: #6c757d;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .detail {
+    padding-left: 25px;
+    text-align: right;
+
+    .heading {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 8px 35px;
+      background-color: #262626;
+      color: #ffffff;
+      border: 1px solid #262626;
+      margin-top: 30px;
+
+      &:hover {
+        background-color: transparent;
+        color: #262626;
+      }
+    }
+  }
+}

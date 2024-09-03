@@ -1,0 +1,43 @@
+@import "../helpers/placeholders";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.footer {
+  padding: 20px;
+  background-color: #252525;
+
+  .social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+
+    h4 {
+      color: #a9a6a6;
+      font-weight: bold;
+    }
+
+    .social-box {
+      display: flex;
+      margin: 0 10px;
+
+      a {
+        margin: 0 10px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  a {
+    color: #ffffff;
+  }
+}

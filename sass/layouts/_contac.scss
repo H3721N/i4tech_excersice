@@ -1,0 +1,58 @@
+.contact {
+  h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .form {
+    padding: 0 45px;
+
+    input {
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      border: none;
+      border-bottom: 1px solid #262626;
+      outline: none;
+      @include placeholder-style;
+
+      &.message {
+        margin-top: 25px;
+      }
+    }
+
+    button {
+      background-color: transparent;
+      border: 2px solid #51b5ef;
+      color: #51b5ef;
+      text-transform: uppercase;
+      padding: 6px 40px;
+      border-radius: 25px;
+      margin-top: 25px;
+    }
+  }
+
+  .box {
+    margin-top: 35px;
+
+    a {
+      @include flex-center;
+      color: #262626;
+      margin: 10px 0;
+
+      .icon {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+        border: 1px solid #262626;
+        margin-right: 10px;
+        @include flex-center;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../helpers/_placeholders";
+@import "../helpers/_mixins";
+@import "../helpers/_variables";
+
+.about_section {
+  .row {
+    @include flex-align-center;
+  }
+
+  .detail-box {
+    padding-left: 10%;
+
+    p {
+      margin-top: 10px;
+    }
+
+    a {
+      @include button-style(#51b5ef, #ffffff);
+    }
+  }
+
+  .img-box img {
+    @extend %img-full-width;
+  }
+}
+

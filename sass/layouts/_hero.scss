@@ -1,0 +1,158 @@
+@import "../helpers/placeholders";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.hero-area {
+  height: 100vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18%;
+    min-width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, cyan, purple);
+  }
+
+  &.sub-page {
+    height: auto;
+
+    &::before {
+      width: 160px;
+    }
+  }
+}
+
+.header-section {
+  .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+
+  .nav-container {
+    margin: 0 auto;
+  }
+
+  .custom-nav-container {
+    z-index: 99999;
+    padding: 10px 0;
+
+    &.navbar-expand-lg {
+      .navbar-nav {
+        .nav-link {
+          padding: 0 25px;
+          color: #ffffff;
+          text-align: center;
+          font-family: "Roboto", sans-serif;
+
+          img {
+            width: 22px;
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 30px;
+      margin-right: 25px;
+    }
+
+    span {
+      font-size: 22px;
+      color: #ffffff;
+      margin-top: 5px;
+    }
+  }
+
+  .custom-menu-btn {
+    z-index: 9;
+    position: absolute;
+    right: 5px;
+    top: 14px;
+
+    button {
+      margin-top: 12px;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    span {
+      display: block;
+      width: 40px;
+      height: 4px;
+      background-color: #262626;
+      margin: 7px 0;
+      transition: all .3s;
+    }
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(62, 103, 205, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 60px;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  a {
+    padding: 0;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      color: initial;
+    }
+  }
+}
+
+.quote-btn-container {
+  a {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: 1px solid #dc3545;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: transparent;
+      color: #dc3545;
+    }
+  }
+}

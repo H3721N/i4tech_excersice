@@ -1,0 +1,49 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+@import "../helpers/placeholders";
+
+.app_section {
+  background-image: url('../images/app-bg.jpg');
+  background-size: 100% 86%;
+  color: #ffffff;
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .detail-box {
+    padding-top: 60px;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 45px;
+
+      span {
+        font-size: 1.5em;
+      }
+    }
+
+    p {
+      color: #ffffff;
+    }
+
+    .btn-box {
+      margin-top: 35px;
+
+      a {
+        margin-right: 10px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

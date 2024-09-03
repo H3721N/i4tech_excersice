@@ -1,0 +1,48 @@
+@import "../helpers/placeholders";
+@import "../helpers/mixins";
+@import "../helpers/variables";
+
+.client_section {
+  .heading_container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .box {
+    width: 75%;
+    margin: 45px auto;
+
+    .client_id {
+      display: flex;
+      align-items: center;
+
+      h4 {
+        margin: 0;
+        margin-left: 10px;
+      }
+    }
+
+    .detail-box {
+      margin-top: 25px;
+    }
+  }
+
+  .carousel-indicators {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    bottom: -15px;
+
+    li {
+      margin: 0 5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #51b5ef;
+
+      &.active {
+        background-color: #252525;
+      }
+    }
+  }
+}
