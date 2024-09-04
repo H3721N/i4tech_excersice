@@ -1,8 +1,12 @@
-@import "../helpers/placeholders";
+@import "../helpers/extends";
 @import "../helpers/mixins";
-@import "../helpers/variables";
+@import "../variables/colors";
 
 $slider-height: 400px;
+
+.slider_section {
+  height: $slider-height;
+}
 
 .slider_section {
   display: flex;

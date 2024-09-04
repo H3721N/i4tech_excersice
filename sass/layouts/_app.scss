@@ -1,6 +1,6 @@
-@import "../helpers/variables";
-@import "../helpers/mixins";
-@import "../helpers/placeholders";
+@import "../helpers/extends";
+@import "../helpers/_mixins";
+@import "../variables/colors";
 
 .app_section {
   background-image: url('../images/app-bg.jpg');

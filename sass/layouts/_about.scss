@@ -1,6 +1,6 @@
-@import "../helpers/_placeholders";
+@import "../helpers/extends";
 @import "../helpers/_mixins";
-@import "../helpers/_variables";
+@import "../variables/colors";
 
 .about_section {
   .row {

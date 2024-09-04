@@ -1,6 +1,6 @@
-@import "../helpers/placeholders";
-@import "../helpers/mixins";
-@import "../helpers/variables";
+@import "../helpers/extends";
+@import "../helpers/_mixins";
+@import "../variables/colors";
 
 .client_section {
   .heading_container {

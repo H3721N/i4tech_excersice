@@ -1,0 +1,38 @@
+@import "_mixins";
+@import "../variables/colors";
+@import "../variables/font";
+@import "../variables/variables";
+
+%img-full-width {
+    width: 100%;
+}
+
+%margin {
+    margin: 0;
+}
+  
+%circle {
+    border-radius: 100%;
+}
+
+%box-shadow-none {
+    outline: none !important;
+    box-shadow: none;
+}
+  
+%navbar-brand-style {
+  @include flex-align-center;
+  font-family: 'American Typewriter', sans-serif;
+  font-weight: 400;
+}
+
+%box-shadow-none {
+  outline: none !important;
+  box-shadow: none;
+}
+
+%navbar-brand-style {
+  @include flex-center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}

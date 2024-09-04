@@ -1,6 +1,6 @@
-@import "../helpers/placeholders";
+@import "../helpers/extends";
 @import "../helpers/mixins";
-@import "../helpers/variables";
+@import "../variables/colors";
 
 .heading-container {
   display: flex;

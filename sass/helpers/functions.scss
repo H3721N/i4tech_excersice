@@ -1,0 +1,4 @@
+@function calculate-padding($multiplier) {
+    @return $multiplier * 5px;
+}
+  

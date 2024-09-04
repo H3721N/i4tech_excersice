@@ -32,13 +32,6 @@
   justify-content: $justify;
 }
 
-@mixin placeholder-style {
-  &::-webkit-input-placeholder { color: rgba(35, 9, 9, 0.6); }
-  &:-ms-input-placeholder { color: rgba(35, 9, 9, 0.6); }
-  &::-ms-input-placeholder { color: rgba(35, 9, 9, 0.6); }
-  &::placeholder { color: rgba(35, 9, 9, 0.6); }
-}
-
 @mixin button-style($bg-color, $text-color, $border-color: $bg-color) {
   background-color: $bg-color;
   color: $text-color;
@@ -51,75 +44,5 @@
   &:hover {
     background-color: transparent;
     color: $border-color;
-  }
-}
-
-@mixin gradient-bg($from, $to) {
-  background: linear-gradient(to right, $from, $to);
-}
-
-@mixin text-center {
-  text-align: center;
-}
-
-@mixin carousel-nav($position, $background-img) {
-  width: 50px;
-  height: 50px;
-  background-color: #17a2b8;
-  background-size: 9px;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  outline: none;
-  background-image: $background-img;
-
-  &:hover {
-    background-color: #20c997;
-  }
-
-  #{$position}: -10%;
-}
-
-@mixin carousel-control($position, $bg-image, $hover-image) {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
-  background-size: 28px;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: unset;
-  bottom: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: $bg-image;
-  opacity: 1;
-
-  &:hover {
-    background-image: $hover-image;
-  }
-
-  #{$position}: -10%;
-}
-
-@mixin bg-image($url, $size, $position: bottom, $repeat: no-repeat) {
-  background-image: url(#{$url});
-  background-size: $size;
-  background-repeat: $repeat;
-  background-position: $position;
-}
-
-@mixin uppercase-bold {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-@mixin hover($border-color, $hover-color) {
-  border: 10px solid $border-color;
-  
-  &:hover {
-    border-color: $hover-color;
   }
 }
