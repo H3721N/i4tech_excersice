@@ -1,0 +1,8 @@
+<h1>De 2023 a la actualidad</h1>
+
+<mat-form-field appearance="fill">
+    <mat-label>Seleccionar una fecha</mat-label>
+    <input matInput [matDatepicker]="picker" [min]="minDate" [max]="maxDate" placeholder="Seleccionar fecha">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>

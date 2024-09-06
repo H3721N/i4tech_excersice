@@ -1,0 +1,10 @@
+<h1>Periodo de tiempo</h1>
+<mat-form-field appearance="fill">
+    <mat-label>Seleccionar rango de fechas</mat-label>
+    <mat-date-range-input [rangePicker]="picker">
+      <input matStartDate placeholder="Fecha de inicio">
+      <input matEndDate placeholder="Fecha de fin">
+    </mat-date-range-input>
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-date-range-picker #picker></mat-date-range-picker>
+</mat-form-field>

@@ -1,0 +1,51 @@
+<button mat-raised-button (click)="isLinear = true" id="toggle-linear">Enable linear mode</button>
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Step 1</ng-template>
+          <mat-form-field>
+            <mat-label>Fecha de nacimiento</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="birthDate">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="firstFormGroup?.get('birthDate')?.hasError('required')">Fecha requerida</mat-error>
+            <mat-error *ngIf="firstFormGroup?.get('birthDate')?.hasError('dateInvalid')">La fecha debe ser menor al día actual</mat-error>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+    </mat-step>
+
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Step 2</ng-template>
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="name">
+        <mat-error *ngIf="secondFormGroup?.get('name')?.hasError('required')">Nombre requerido</mat-error>
+        <mat-error *ngIf="secondFormGroup?.get('name')?.hasError('pattern')">Solo se permiten letras</mat-error>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Step 3</ng-template>
+        <mat-slide-toggle (change)="toggleDPIChanged($event)">DPI</mat-slide-toggle>
+        <form [formGroup]="thirdFormGroup" *ngIf="toggleDPI">
+          <mat-form-field>
+            <mat-label>DPI</mat-label>
+            <input matInput formControlName="dpi">
+            <mat-error *ngIf="thirdFormGroup?.get('dpi')?.hasError('required')">DPI requerido</mat-error>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </form>
+    </mat-step>
+</mat-horizontal-stepper>
