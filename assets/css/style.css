@@ -108,6 +108,8 @@ footer {
   background: #666666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
+  z-index: 1000;
+  width: 100%;
 }
 
 h3, h2 {
@@ -217,6 +219,8 @@ input[type=submit] {
 }
 
 
+
+
 /* Query*/
 
 @media only screen and (max-width: 980px) {
@@ -239,6 +243,7 @@ input[type=submit] {
   .work {
     width: 40%;
   }
+
 }
 
 @media only screen and (max-width: 768px)  {
@@ -258,14 +263,14 @@ input[type=submit] {
 
 @media only screen and (max-width:640px) {
   .auth-image {
-    height: 100%;
+    height: auto;
     width: 100%; 
   }
 
   .main-section {
     height: auto;
-    width: 99%;
-    font-size: 16px;
+    width: 100%;
+    font-size: 12px;
   }
 
   .container {
@@ -283,11 +288,14 @@ input[type=submit] {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-bottom: 15px;
   }
 
   .work {
     width: 100%;
   }
+
+  .masthead{
+    margin-bottom: 2vh;
+  }
 }
-
-
