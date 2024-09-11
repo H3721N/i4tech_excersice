@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DogsComponent } from './dogs/dogs.component';
-import { FormsModule } from '@angular/forms'; 
+import { DogsComponent } from './components/dogs/dogs.component';
+import { FormsModule } from '@angular/forms';
+import { DogsService } from './dogs.service'; 
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
   exports: [
     DogsComponent,
     FormsModule
-  ]
+  ],
+  providers: [DogsService],
 })
 export class AdminModule { }
