@@ -1,0 +1,9 @@
+<div>
+    <h2>Perros aleatorios</h2>
+    <img *ngIf="dogImageUrl" [src]="dogImageUrl" alt="Random Dog">
+    <button (click)="fetchDogImage()">Get New Image</button>
+  </div>
+<div>
+    <textarea #textArea></textarea>
+    <div appWhiteSpaceDirective="textArea.value"></div>
+</div>
