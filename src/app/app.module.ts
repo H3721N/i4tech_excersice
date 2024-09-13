@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
+import { DogsComponent } from './admin/components/dogs/dogs.component';
 
 
 @NgModule({
@@ -18,11 +19,12 @@ import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule,
     HttpClientModule,
     ReactiveFormsModule,
-    SocialLoginModule
+    SocialLoginModule,
+    AdminModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
     {
       provide: 'SocialAuthServiceConfig',

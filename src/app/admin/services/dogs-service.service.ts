@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DogsServiceService {
 

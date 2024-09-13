@@ -6,7 +6,6 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DogsService {
-
   private apiUrl = 'https://dog.ceo/api/breeds/image/random';
 
   constructor(private http: HttpClient) { }
@@ -14,4 +13,5 @@ export class DogsService {
   getRandomDogImage(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
   }
+
 }

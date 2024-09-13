@@ -1,0 +1,6 @@
+projectKey=i4tech_excersice
+serverUrl=http://localhost:9000
+serverVersion=10.6.0.92116
+dashboardUrl=http://localhost:9000/dashboard?id=i4tech_excersice
+ceTaskId=e290c63d-b2c9-4a98-bf33-ebd550e139d1
+ceTaskUrl=http://localhost:9000/api/ce/task?id=e290c63d-b2c9-4a98-bf33-ebd550e139d1

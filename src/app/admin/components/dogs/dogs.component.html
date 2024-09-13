@@ -1,10 +1,6 @@
-<div>
+<div style="max-width: 200px; height: auto;">
     <h2>Perros aleatorios</h2>
-    <img *ngIf="dogImageUrl" [src]="dogImageUrl" alt="Random Dog">
+    <img *ngIf="dogImageUrl" [src]="dogImageUrl" alt="Random Dog" style="max-width: 200px; height: auto;">
     <button (click)="fetchDogImage()">Get New Image</button>
-  </div>
-<div>
-    <textarea #textArea></textarea>
-    <div appWhiteSpaceDirective="textArea.value"></div>
 </div>
 
