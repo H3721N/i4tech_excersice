@@ -3,9 +3,12 @@ import { AppComponent } from './app.component';
 import { SocialAuthServiceConfig, SocialAuthService, GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { DogsComponent } from './admin/components/dogs/dogs.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterModule } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 beforeEach(async () => {
   await TestBed.configureTestingModule({
+    imports:[RouterTestingModule],
     declarations: [AppComponent],
     providers: [
       {
@@ -55,6 +58,6 @@ describe('AppComponent', () => {
 
   it('should render title', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('head title')?.textContent).toContain('Document');
+    expect(compiled.querySelector('title')?.textContent).toContain('Document');
   });
 });

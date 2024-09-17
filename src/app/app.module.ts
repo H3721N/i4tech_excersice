@@ -11,6 +11,7 @@ import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-s
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { DogsComponent } from './admin/components/dogs/dogs.component';
 import { HogarComponent } from './hogar/hogar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HogarComponent } from './hogar/hogar.component';
     HttpClientModule,
     ReactiveFormsModule,
     SocialLoginModule,
-    AdminModule
+    AdminModule,
+    RouterModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [
