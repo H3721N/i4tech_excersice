@@ -10,11 +10,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SocialLoginModule, SocialAuthServiceConfig } from '@abacritt/angularx-social-login';
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { DogsComponent } from './admin/components/dogs/dogs.component';
-
+import { HogarComponent } from './hogar/hogar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HogarComponent
   ],
   imports: [
     BrowserModule,
