@@ -1,0 +1,17 @@
+<div>
+    <h1>Ingrese los datos del antiguo usuario</h1>
+
+    <p>User Created:</p>
+    <input [(ngModel)]="userCreated" />
+
+    <p>Date Created:</p>
+    <input [(ngModel)]="dateCreated" type="date" />
+
+    <p>User Updated:</p>
+    <input [(ngModel)]="userUpdated"/>
+
+    <p>Date Updated:</p>
+    <input [(ngModel)]="dateUpdated" type="date" />
+
+    <button (click)="navigateWithParams()">Enviar datos</button>
+</div>

@@ -1,0 +1,44 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.form {
+    height: 55%;
+    width: 30%;
+    border: 1px solid slateblue;
+    background-color: white;
+    color: skyblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3vh;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+    .button-vlv {
+        color: skyblue;
+        width: 80%;
+        border: 1px solid skyblue;
+        background-color: white;
+        border-radius: 3vh;
+    }
+
+    .button-vlv:hover {
+        color: slateblue;
+        width: 80%;
+        border: 1px solid slateblue;
+        background-color: white;
+        border-radius: 3vh;
+    }
+
+    .span-users{
+        color: slateblue;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    
+}

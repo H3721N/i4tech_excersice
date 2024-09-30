@@ -1,6 +1,9 @@
 import { DogsService } from '../../dogs.service';
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-dogs',
   templateUrl: './dogs.component.html',
@@ -9,7 +12,8 @@ import { Component, OnInit } from '@angular/core';
 export class DogsComponent implements OnInit {
   dogImageUrl: string = '';
 
-  constructor(private dogsService: DogsService) {}
+  constructor(private dogsService: DogsService, private router: Router) {}
+
 
   ngOnInit(): void {
     this.fetchDogImage();
@@ -24,5 +28,21 @@ export class DogsComponent implements OnInit {
         console.error('Error fetching dog image', error);
       }
     );
+  }
+
+  userCreated: string = '';
+  dateCreated: string = '';
+  userUpdated: string = '';
+  dateUpdated: string = '';
+
+  navigateWithParams(): void {
+    this.router.navigate(['/shared/users'], {
+      queryParams: {
+        userCreated: this.userCreated,
+        dateCreated: this.dateCreated,
+        userUpdated: this.userUpdated,
+        dateUpdated: this.dateUpdated,
+      },
+    });
   }
 }

@@ -15,6 +15,18 @@ const routes: Routes = [
     path:'commons',
     loadChildren: () => import('./common/common.module').then(m => m.default)
   },
+  {
+    path: 'shared',
+    loadChildren: () => import('./shared/shared.module').then(m => m.SharedModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+  },
+  {
+    path: 'operator',
+    loadChildren: () => import('./operation/operation.module').then(m => m.OperationModule)
+  }
 ];
 
 @NgModule({

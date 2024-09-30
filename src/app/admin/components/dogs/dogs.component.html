@@ -2,5 +2,23 @@
     <h2>Perros aleatorios</h2>
     <img *ngIf="dogImageUrl" [src]="dogImageUrl" alt="Random Dog" style="max-width: 200px; height: auto;">
     <button (click)="fetchDogImage()">Get New Image</button>
+    
 </div>
 
+<div>
+    <h1>Ingrese los datos del antiguo usuario</h1>
+
+    <label>User Created:</label>
+    <input [(ngModel)]="userCreated" />
+
+    <label>Date Created:</label>
+    <input [(ngModel)]="dateCreated" type="date" />
+
+    <label>User Updated:</label>
+    <input [(ngModel)]="userUpdated"/>
+
+    <label>Date Updated:</label>
+    <input [(ngModel)]="dateUpdated" type="date" />
+
+    <button (click)="navigateWithParams()">Enviar datos</button>
+</div>
